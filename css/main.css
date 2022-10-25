@@ -7,8 +7,6 @@
     font-display: swap;
 }
 
-
-
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
@@ -466,6 +464,7 @@ img {
     background-image: url('../images/proces-bg.png');
     background-repeat: no-repeat;
     background-position:top center;
+    background-size: 100%;
 }
 
 .proces__inner {
@@ -541,7 +540,7 @@ img {
 
 .content__circle {
     position: absolute;
-    bottom: -10px;
+    bottom: -7px;
     background: #fff;
     display: block;
     width: 17px;
@@ -561,3 +560,259 @@ img {
     right: 20px;
 }
 
+.proces__btn {
+    margin: 0 auto;
+    margin-top: 8px;
+    display: block;
+    width: 220px;
+    background: #02897A;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 31px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+.design {
+    
+}
+
+.design__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    color: var(--main-text-color);
+}
+
+.design__desc {
+    margin: 0;
+    margin: 8px 0 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--main-text-color);
+}
+
+.item__wrap {
+    padding: 0 30px 40px 24px;
+}
+
+.design__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.design__item {
+    width: 348px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.item__author {
+    margin: 0;
+    margin: 24px 0 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--main-text-color);
+}
+
+.item__title {
+    cursor: pointer;
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: var(--main-text-color);
+    transition: all .4s ease;
+}
+
+.item__title:hover {
+    color: #02897A;
+}
+
+.content__prev {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.prev__line {
+    width: 16px;
+    height: 16px;
+    background: #EFEFEF;
+    border-radius: 50%;
+    margin:0 10px;
+}
+
+.prev__line:nth-child(2) {
+    background: #02897A;
+}
+
+
+.table {
+    padding: 150px 0;
+}
+
+.table__wrap {
+    width: 537px;
+    display: block;
+    margin: 0 auto;
+}
+
+.table__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: var(--main-text-color);
+}
+
+.table__desc {
+    margin: 0;
+    margin: 8px 0 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: var(--main-text-color);
+}
+
+.table__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__wrap {
+    padding: 24px 74px 32px 74px;
+    text-align: center;
+    width: 322.65px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.card__wrap:hover {
+    background: #02897A;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.card__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: var(--main-text-color);
+}
+
+.card__desc {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: var(--main-text-color);
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+}
+
+.price__number {
+    margin: 0;
+    margin-right: 8px;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #02897A;
+}
+
+.price__dollar {
+    text-align: left;
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #02897A;
+}
+
+.price__month {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+    color: #AFAFAF;
+}
+
+.card__service {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: var(--main-text-color);
+}
+
+.card__link {
+    margin-top: 38px;
+    display: inline-block;
+    background: #02897A;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    padding: 11px 18px;
+    color: #FFFFFF;
+}
+
+.card__wrap:hover .card__link{
+    color: #02897A;
+    background: #FFFFFF;
+}
+
+.card__wrap:hover
+.card__title{
+    color: #fff;
+}
+.card__wrap:hover
+.card__desc{
+    color: #fff;
+}
+.card__wrap:hover
+.price__number{
+    color: #fff;
+}
+.card__wrap:hover
+.price__dollar{
+    color: #fff;
+}
+.card__wrap:hover
+.card__service{
+    color: #fff;
+}
+.card__wrap:hover
+.price__month{
+    color: #fff;
+}
