@@ -1023,3 +1023,23 @@ input {
     /* display: block; */
     text-align: center;
 }
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+.aside__inner {
+    background-image: url('../images/aside@2x.png');
+}
+
+.hero__inner {
+    background-image: url('../images/bgi@2x.png');
+}
+
+}
