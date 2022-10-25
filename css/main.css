@@ -459,3 +459,39 @@ img {
 .link__3::before {
     background-image: url('../images/blue.svg');
 }
+
+
+.proces {
+    padding: 0 0 150px;
+}
+
+.proces__wrap {
+    width: 542px;
+    margin: 0 auto;
+}
+
+.proces__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.proces__desc {
+    margin: 0;
+    margin: 16px 0 9px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #22343D;
+    color: var(--main-text-color);
+}
+
+.content__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
