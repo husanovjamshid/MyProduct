@@ -462,7 +462,15 @@ img {
 
 
 .proces {
-    padding: 0 0 150px;
+    padding: 52px 0 150px;
+    background-image: url('../images/proces-bg.png');
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+
+.proces__inner {
+    width: 963px;
+    margin: 0 auto;
 }
 
 .proces__wrap {
@@ -481,7 +489,7 @@ img {
 
 .proces__desc {
     margin: 0;
-    margin: 16px 0 9px;
+    margin: 16px 0 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -490,8 +498,66 @@ img {
     color: var(--main-text-color);
 }
 
+
+.proces__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .content__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+
+.content__item {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-bottom: 38px;
+}
+
+.content__item-two,
+.content__item-three 
+{
+    flex-direction: row-reverse;
+}
+
+.content__desc {
+    position: relative;
+    width: 274px;
+    padding: 15px 19px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+    border-radius: 26.5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F281E;
+}
+
+.content__circle {
+    position: absolute;
+    bottom: -10px;
+    background: #fff;
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.content__item-two .content__circle{
+    right: 20px;
+}
+
+.content__item-three .content__circle{
+    right: 20px;
+}
+
+.content__item-four .content__circle{
+    right: 20px;
+}
+
