@@ -39,6 +39,7 @@
 
 :root {
     --main-bg-color: #fff ;
+    --main-text-line: #E7E7E7;
     --main-text-color: #22343D;
     --main-logo-color: url('../images/logo-text.svg');
     --main-bg-dark :url('../images/service-bg.png');
@@ -49,6 +50,7 @@
 .dark {
     --main-bg-color: #1F2E35;
     --main-text-color: #fff;
+    --main-text-line: #474747;
     --main-logo-color: url('../images/logo-white.svg');
     --main-bg-dark :url('../images/bg-dark.png');
     --main-bg-proces: url('../images/proces-bg-dark.png');
@@ -1241,5 +1243,75 @@ only screen and (                min-resolution: 2dppx) {
     content: "";
     width: 920px;
     height: 0px;
-    border: 1px solid #E7E7E7;
+    border: 1px solid;
+    border-color: var(--main-text-line);
 }
+
+
+label {
+    cursor: pointer;
+}
+
+.dropdown__label {
+    position: relative;
+}
+
+.label__input {
+    transition: all 1s ease;
+}
+
+.label__title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--main-text-color);
+}
+
+.label__title::before {
+    margin-right: 16px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/plus_circle.svg');
+    background-position: center;
+    display: block;
+}
+
+.label__desc {
+    display: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main-text-color);
+}
+
+.label__desc::after {
+    display: block;
+    margin-top: 20px;
+    content: "";
+    width: 920px;
+    height: 0px;
+    border: 1px solid;
+    border-color: var(--main-text-line);
+    position: absolute;
+}
+
+.label__input:checked ~ .label__desc {
+    display: block;
+    position: absolute;
+    
+}
+
+.label__input:checked ~ .label__title::before {
+    transition: all .4s ease;
+    margin-right: 16px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/minus_circle.svg');
+    background-position: center;
+    display: block;
+}
+
