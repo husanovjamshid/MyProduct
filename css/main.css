@@ -38,6 +38,7 @@
 
 
 :root {
+    --main-bg-footer: url('../images/footer-logo.svg');
     --main-bg-color: #fff ;
     --main-text-line: #E7E7E7;
     --main-text-color: #22343D;
@@ -48,6 +49,7 @@
 }
 
 .dark {
+    --main-bg-footer: url('../images/footer-bg-white.svg');
     --main-bg-color: #1F2E35;
     --main-text-color: #fff;
     --main-text-line: #474747;
@@ -643,7 +645,7 @@ img {
     font-weight: 700;
     font-size: 24px;
     line-height: 40px;
-    color: var(--main-text-color);
+    color: #22343D;
     transition: all .4s ease;
 }
 
@@ -1042,6 +1044,14 @@ input {
     text-align: center;
 }
 
+.footer__logo {
+    background-image: var(--main-bg-footer);
+    background-position: center;
+    background-size: cover;
+    width: 162px;
+    height: 30px;
+    z-index: 55;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -1127,8 +1137,6 @@ only screen and (                min-resolution: 2dppx) {
     color: #FFFFFF;
 }
 
-
-
 .product-service {
     padding: 150px 0;
 }
@@ -1152,6 +1160,7 @@ only screen and (                min-resolution: 2dppx) {
     align-items: center;
     justify-content: space-between;
 }
+
 .effects__right {
     margin-left: 63px;
 }
@@ -1206,8 +1215,6 @@ only screen and (                min-resolution: 2dppx) {
     align-items: center;
     color: var(--main-text-color);
 }
-
-
 
 
 .question__inner {
