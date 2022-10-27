@@ -921,13 +921,16 @@ img {
 .aside__inner {
     padding: 50px 36px 50px 50px;
     width: 968px;
-    margin: 150px auto;
+    margin: 0 auto;
+    margin-top: 460px;
+    margin-bottom: 150px;
     background: #02897A;
     border-radius: 32px;
     background-image: url('../images/aside.png');
     background-repeat: no-repeat;
     background-position: right center;
     height: 351px;
+    position: relative;
 }
 
 
@@ -1229,22 +1232,35 @@ only screen and (                min-resolution: 2dppx) {
     width: 920px;
     display: block;
     margin: 0 auto;
+    position: relative;
 }
 
 .dropdown__list {
     margin: 0;
     padding: 0;
+    display: inline-block;
     list-style-type: none;
+    position: absolute;
+    z-index: 999;
+    max-height: 390px;
+    overflow: auto;
 }
 
-.dropdown__item::after {
+.dropdown__item + .dropdown__item {
+    margin-top: 17px;
+}
+
+.dropdown__item-line {
     display: block;
     margin-top: 20px;
-    content: "";
     width: 920px;
     height: 0px;
     border: 1px solid;
     border-color: var(--main-text-line);
+}
+
+.drop__none {
+    display: none;
 }
 
 
@@ -1261,6 +1277,7 @@ label {
 }
 
 .label__title {
+    margin: 0;
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -1280,6 +1297,8 @@ label {
 }
 
 .label__desc {
+    margin: 0;
+    margin-top: 14px;
     display: none;
     font-weight: 400;
     font-size: 16px;
@@ -1287,21 +1306,13 @@ label {
     color: var(--main-text-color);
 }
 
-.label__desc::after {
-    display: block;
-    margin-top: 20px;
-    content: "";
-    width: 920px;
-    height: 0px;
-    border: 1px solid;
-    border-color: var(--main-text-line);
-    position: absolute;
-}
 
 .label__input:checked ~ .label__desc {
     display: block;
-    position: absolute;
-    
+}
+
+.two:checked ~ .dropdown__label > .one__desc {
+    display: none;
 }
 
 .label__input:checked ~ .label__title::before {
