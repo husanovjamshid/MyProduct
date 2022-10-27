@@ -922,7 +922,7 @@ img {
     padding: 50px 36px 50px 50px;
     width: 968px;
     margin: 0 auto;
-    margin-top: 460px;
+    margin-top: 150px;
     margin-bottom: 150px;
     background: #02897A;
     border-radius: 32px;
@@ -1064,6 +1064,11 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* Pricing html  */
+
+.aside__inner-pricing {
+    margin-top: 460px;
+}
+
 
 .enterprice {
     background-image: var(--main-bg-enterprice);
@@ -1326,3 +1331,97 @@ label {
     display: block;
 }
 
+.up__btn {
+    position: fixed;
+    bottom: 35px;
+    right: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #198d91;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #198d91;
+    border-radius: 50%;
+}
+
+.dark__light {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+}
+
+.dark__mode {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #198d91;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #198d91;
+    background-color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #000;
+}
+
+.light__mode {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #198d91;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #198d91;
+    background-color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #000;
+}
+
+.mode__active {
+    background: linear-gradient(270deg,#198d92,#29af9f);
+    box-shadow: none;
+    color: #fff;
+    border-color: linear-gradient(270deg,#198d92,#29af9f);
+}
+
+.dark__mode > .dark__mode-img {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/night-mode.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mode__active > .dark__mode-img {
+    background-image: url('../images/night-mode-white.png');
+}
+
+.light__mode > .light__mode-img {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/sun.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mode__active > .light__mode-img {
+    background-image: url('../images/sun-white.png');
+}
+
+.up__img {
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}

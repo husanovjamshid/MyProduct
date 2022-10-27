@@ -41,7 +41,7 @@
                         <div class="buttons">
                             <a class="buttons__login" href="#">Sign In</a>
                             <a class="buttons__register" href="#">Sign Up</a>
-                            <img class="buttons__dark" src="./images/dark-mode.svg" alt="dark mode">
+                            
                         </div>
                     </nav>
                 </div>
@@ -275,10 +275,10 @@
                             <p class="card__desc">Brief price description</p>
                             <div class="card__price price">
                                 <h3 class="price__number">0</h3>
-                                <span>  
+                                <div>  
                                     <p class="price__dollar">$</p>
                                     <p class="price__month">Per / month</p>
-                                </span>                                             
+                                </div>                                             
                             </div>
                             <p class="card__service">Only 2 Op erators</p>
                             <p class="card__service">Notifications</p>
@@ -292,10 +292,10 @@
                             <p class="card__desc">Brief price description</p>
                             <div class="card__price price">
                                 <h3 class="price__number">5</h3>
-                                <span>  
+                                <div>  
                                     <p class="price__dollar">$</p>
                                     <p class="price__month">Per / month</p>
-                                </span>                                             
+                                </div>                                             
                             </div>
                             <p class="card__service">Only 2 Op erators</p>
                             <p class="card__service">Notifications</p>
@@ -309,10 +309,10 @@
                             <p class="card__desc">Brief price description</p>
                             <div class="card__price price">
                                 <h3 class="price__number">10</h3>
-                                <span>  
+                                <div>  
                                     <p class="price__dollar">$</p>
                                     <p class="price__month">Per / month</p>
-                                </span>                                             
+                                </div>                                             
                             </div>
                             <p class="card__service">Only 2 Op erators</p>
                             <p class="card__service">Notifications</p>
@@ -426,7 +426,7 @@
                     </p>
                     <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
                         <input type="email" aria-label="Your email" required name="your_email" >
-                        <button type="submit" class="footer__button" href="#">Sign up Now</button>
+                        <button type="submit" class="footer__button">Sign up Now</button>
                     </form>
                 </li>
             </ul>
@@ -434,7 +434,19 @@
             </p>
         </div>
     </footer>
-            
+    
+    <div class="dark__light">
+        <div class="dark__mode ">
+            <span class="dark__mode-img"></span>
+        </div>
+        <div class="light__mode mode__active">
+            <span class="light__mode-img"></span>
+        </div>
+    </div>
+
+    <a href="#" class="up__btn">
+        <img class="up__img" src="./images/upload.png"  alt="arrow up">
+    </a>
     <script src="./js/script.js"></script>
 </body>
 </html>
