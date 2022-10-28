@@ -294,7 +294,6 @@ img {
     justify-content: space-between;
 }
 
-
 .services__item {
     width: 240px;
 }
@@ -329,7 +328,7 @@ img {
 }
 
 
-.item__title {
+.item__title-design {
     margin: 30px 0 13px;
     padding: 0;
     font-weight: 600;
