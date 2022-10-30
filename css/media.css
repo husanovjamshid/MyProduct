@@ -323,12 +323,12 @@
     .dark__light {
         position: fixed;
         bottom: 15px;
-        left: 8px;
+        left: 9px;
     }
 
     .up__btn {
         bottom: 25px;
-        right: 8px;
+        right: 9px;
     }
 }
 
