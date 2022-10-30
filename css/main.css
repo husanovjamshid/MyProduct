@@ -99,7 +99,8 @@ img {
 }
 
 .container {
-    width: 1140px;
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -112,7 +113,7 @@ img {
 .site-header__wrap {
     display: flex;
     align-self: center;
-    justify-content: space-between;
+    
 }
 
 .logo {
@@ -130,6 +131,7 @@ img {
 }
 
 .sitenav {
+    margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -195,8 +197,11 @@ img {
     cursor: pointer;
 }
 
+.menu {
+    display: none;
+}
+
 .hero__inner {
-    height: 555px;
     background-image: url('../images/bgi.png');
     background-repeat: no-repeat;
     background-position: right;
@@ -206,6 +211,7 @@ img {
     width: 458px;
     padding: 145px 0 220px ;
 }
+
 
 .content__title {
     margin: 0;
@@ -228,7 +234,7 @@ img {
 .content__buttons {
     display: flex;
     align-items: center;
-    gap: 44.4px;
+    gap: 30px;
 }
 
 .content__btn {
@@ -368,6 +374,7 @@ img {
 
 .managment__inner {
     display: block;
+    margin-bottom: 131px;
 }
 
 .managment__desc {
@@ -399,6 +406,13 @@ img {
 .managment__wrap:nth-child(3) {
     align-items: center;
     flex-direction: row-reverse;
+}
+
+.managment__wrap img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    background-size: 540px 474px; 
 }
 
 .wrap__left {
@@ -456,7 +470,6 @@ img {
 .wrap__link::before {
     width: 50px;
     height: 50px;
-    
     display: block;
     background-repeat: no-repeat;
     background-position: center;
@@ -521,7 +534,7 @@ img {
     justify-content: space-between;
 }
 
-.content__list {
+ .content__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -1431,3 +1444,4 @@ label {
     background-position: 50%;
     background-repeat: no-repeat;
 }
+
