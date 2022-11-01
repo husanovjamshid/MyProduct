@@ -7,7 +7,7 @@
     <title>MyProduct</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/media.css">
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
 </head>
 <body>
     
@@ -139,7 +139,17 @@
 
                 <div class="product-service__wrap effects">
                     <div class="effects__left">
-                        <img src="./images/enterprice-mobile.png" srcset="./images/p-service.png 1x, ./images/p-service@2x.png 2x"  alt="product service bg">
+                        <picture>
+                            <source
+                            type="image/webp"
+                            srcset="./images/p-service.webp 1x, ./images/p-service@2x.webp 2x"
+                            >
+
+                            <img 
+                            src="./images/enterprice-mobile.png" 
+                            srcset="./images/p-service.png 1x, ./images/p-service@2x.png 2x"  
+                            alt="product service bg">
+                        </picture>
                     </div>
 
                     <div class="effects__right">
