@@ -301,7 +301,8 @@ img {
 }
 
 .services__item {
-    width: 240px;
+    width: 100%;
+    max-width: 240px;
 }
 
 .services__item::before {
@@ -310,7 +311,6 @@ img {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 .services__item:nth-child(1)::before {
@@ -534,7 +534,7 @@ img {
     justify-content: space-between;
 }
 
- .content__list {
+.content__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -1083,7 +1083,9 @@ only screen and (                min-resolution: 2dppx) {
     
 }
 
-/* Pricing html  */
+
+
+/********* Pricing html  **************/
 
 .aside__inner-pricing {
     margin-top: 460px;
@@ -1353,6 +1355,150 @@ label {
     display: block;
 }
 
+
+
+/************ Curtomers html ************/
+
+.custom__client-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.custom__client-list {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 350px;   
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 165px);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: start;
+    justify-content: space-between;
+    gap: 30px; 
+}
+
+.custom__client-link:nth-child(2) {
+    text-align: end;
+}
+
+.custom__client-link:nth-child(4) {
+    text-align: end;
+}
+
+.services {
+    padding: 24px 0 61px;
+    background-image: url('../images/product-bg-mobile.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.services__list-custom {
+    margin: 66px 0 0 0;
+    grid-template-columns: repeat(1, 350px) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+    gap: 35px;
+}
+
+.services__item-custom {
+    padding: 33px 36px;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.services__title-custom {
+    max-width: 361px;
+}
+
+.work {
+    padding: 96px 0 70px;
+}
+
+.work__inner {
+    margin: 0 auto;
+}
+
+.work__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.work__list {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.work__item + .work__item {
+    margin-top: 70px;
+}
+
+.item-custom__step {
+    display: block;
+    margin: 80px 0 16px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--main-text-color);
+}
+
+.item-custom__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--main-text-color);
+}
+
+.itme-custom__desc {
+    margin: 0;  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--main-text-color);
+}
+
+@media only screen and (max-width: 400px) {
+    .services {
+        padding: 24px 0 61px !important;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    
+    .custom__client-list {
+        grid-template-columns: repeat(1, 165px);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+    }
+    
+    .services__list-custom {
+        margin: 66px 0 0 0;
+        grid-template-columns: repeat(1, 250px) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+        gap: 35px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+/********** Up btn  ************/
 .up__btn {
     position: fixed;
     bottom: 35px;
@@ -1449,8 +1595,6 @@ label {
     background-position: 50%;
     background-repeat: no-repeat;
 }
-
-
 
 
 
@@ -2064,7 +2208,7 @@ label {
         border-radius: 8px;
         padding: 11px 34px;
     }
-
+    
     .aside__inner-pricing {
         margin-top: 405px;
     }
@@ -2105,7 +2249,7 @@ label {
         font-size: 15px;
         line-height: 25px;
     }
-
+    
     .label__title::before {
         background-size: 18px 18px;
     }
