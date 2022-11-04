@@ -1231,7 +1231,6 @@ only screen and (                min-resolution: 2dppx) {
     color: var(--main-text-color);
 }
 
-
 .question__inner {
     margin: 0 auto;
 }
@@ -1291,7 +1290,6 @@ only screen and (                min-resolution: 2dppx) {
 .drop__none {
     display: none;
 }
-
 
 label {
     cursor: pointer;
@@ -1389,6 +1387,7 @@ label {
 }
 
 .services {
+    margin-top: 81px;
     padding: 24px 0 61px;
     background-image: url('../images/product-bg-mobile.png');
     background-repeat: no-repeat;
@@ -1441,6 +1440,8 @@ label {
     margin-top: 70px;
 }
 
+
+
 .item-custom__step {
     display: block;
     margin: 80px 0 16px;
@@ -1487,6 +1488,13 @@ label {
         gap: 35px;
     }
     
+    .item-custom__img {
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 
