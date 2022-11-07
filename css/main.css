@@ -2410,6 +2410,8 @@ label {
 
 
 .content__buttons-res {
+    width: 100%;
+    max-width: 470px;
     padding: 15px 5px  15px 27px;
     border: 1px solid #EAEAEA;
     border-radius: 100px;
@@ -2510,6 +2512,10 @@ label {
     background-image: url(../images/arrow-circle_right.svg);
 }
 
+.contact {
+    padding: 150px 0 60px;
+}
+
 .contact__title {
     margin: 0;
     padding: 0;
@@ -2549,8 +2555,87 @@ label {
 .contact__form {
     display: block;
     margin: 0 auto;
+    margin-bottom: 45px;
+    padding:40px 50px;
     width: 868px;
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
     border-radius: 20px;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+.form__title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+    color: var(--main-text-color);
+}
+.form input {
+    padding: 19px 0 19px 20px;
+    width: 100%;
+    max-width: 768px;
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    border-radius: 39px;
+}
+
+.form textarea {
+    width: 100%;
+    padding: 23px 0 0 20px;
+    max-width: 768px;
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    resize: none;
+    outline: none;
+}
+
+.form__button {
+    padding: 18px 54px;
+    margin-top: 45px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    background: #02897A;
+    border-radius: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 576px) {
+    .hero__inner-res {
+        width: 100%;
+        max-width: 359px;
+        background-image: url('../images/res-bg-mobile.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+        margin: 0 auto;
+    }
+
+    .content__buttons-res {
+        max-width: 346px;
+        padding: 15px 5px  15px 22px;
+    }
+
+    .content__btn-res {
+        max-width: 74px;
+        padding: 15px 19px 15px 25px;
+    }
+
+    .res__input {
+        max-width: 177px;
+    }
+
+    .content__join {
+        margin-bottom: 105px;
+    }
 }
