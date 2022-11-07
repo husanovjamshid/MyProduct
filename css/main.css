@@ -1546,39 +1546,39 @@ label {
 @media only screen  and (min-width: 992px){
     .custom__client-list {
         justify-content: center;
-
+        
         display: flex;
         
     }
-
+    
     .work__list {
         max-width: 1021px;
     }
-
+    
     .work__item {
         margin-top: 84px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
+    
     .work__item:nth-child(2) {
         flex-direction: row-reverse;
     }
-
+    
     .work__wrap {
         max-width: 438px;
     }
-
+    
     .item-custom__title {
         margin-bottom: 16px;
     }
-
+    
     .item-custom__step {
         margin: 0;
         margin-bottom: 16px;
     }
-
+    
     .offers__list {
         display: flex;
         align-items: center;
@@ -1586,11 +1586,11 @@ label {
         max-width: 725px;
         margin: 0 auto;
     }
-
+    
     .offers__item {
         max-width: 300px;
     }
-
+    
     .offers__item + .offers__item {
         margin-top: 0;
     }
@@ -2391,3 +2391,62 @@ label {
     }
 }
 /* ****** END MEDIA QUERY ******* */
+
+
+
+
+
+/* RESOURCES HTML  */
+
+.design__list-res {
+    margin:32px 0;
+}
+
+.hero__inner-res {
+    background-image: url('../images/res-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.content__buttons-res {
+    padding: 15px 5px  15px 27px;
+    border: 1px solid #EAEAEA;
+    border-radius: 100px;
+    justify-content: space-between;
+}
+
+.res__input {
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+}
+
+.res__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: var(--main-text-color);
+}
+
+.content__btn-res {
+    max-width: 74px;
+    padding: 15px 19px 15px 25px;
+    text-decoration: none;
+    background: #02897A;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 0px;
+    color: #FFFFFF;
+    border: transparent;
+    outline: none;
+}
+
+.content__join {
+    display: flex;
+    align-items: center;
+}
