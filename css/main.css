@@ -38,6 +38,8 @@
 
 
 :root {
+    --main-bg-product:url('../images/product-bg-mobile.png');
+    --main-bg-offer: url('../images/offer-bg.png');
     --main-bg-footer: url('../images/footer-logo.svg');
     --main-bg-color: #fff ;
     --main-text-line: #E7E7E7;
@@ -49,6 +51,8 @@
 }
 
 .dark {
+    --main-bg-product:url('../images/product-bg-dark');
+    --main-bg-offer: url('../images/offer-bg-dark.png')
     --main-bg-footer: url('../images/footer-bg-white.svg');
     --main-bg-color: #1F2E35;
     --main-text-color: #fff;
@@ -1388,7 +1392,7 @@ label {
 .services {
     margin-top: 81px;
     padding: 24px 0 61px;
-    background-image: url('../images/product-bg-mobile.png');
+    background-image: var(--main-bg-product);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -1471,6 +1475,9 @@ label {
 
 .offers {
     padding: 10px 0 100px;
+    background-image: var(--main-bg-offer);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .offers__title {
@@ -1534,6 +1541,59 @@ label {
 
 .str {
     font-weight: 700;
+}
+
+@media only screen  and (min-width: 992px){
+    .custom__client-list {
+        justify-content: center;
+
+        display: flex;
+        
+    }
+
+    .work__list {
+        max-width: 1021px;
+    }
+
+    .work__item {
+        margin-top: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .work__item:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .work__wrap {
+        max-width: 438px;
+    }
+
+    .item-custom__title {
+        margin-bottom: 16px;
+    }
+
+    .item-custom__step {
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .offers__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 725px;
+        margin: 0 auto;
+    }
+
+    .offers__item {
+        max-width: 300px;
+    }
+
+    .offers__item + .offers__item {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 400px) {
