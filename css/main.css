@@ -38,6 +38,7 @@
 
 
 :root {
+    --main-form-bg: #fff;
     --main-bg-product:url('../images/product-bg-mobile.png');
     --main-bg-offer: url('../images/offer-bg.png');
     --main-bg-footer: url('../images/footer-logo.svg');
@@ -51,6 +52,7 @@
 }
 
 .dark {
+    --main-form-bg: #22343D;
     --main-bg-product:url('../images/product-bg-dark');
     --main-bg-offer: url('../images/offer-bg-dark.png')
     --main-bg-footer: url('../images/footer-bg-white.svg');
@@ -2559,8 +2561,9 @@ label {
     padding:40px 50px;
     width: 868px;
     background: #FFFFFF;
-    border: 1px solid #DDDDDD;
+    border: 1px solid transparent;
     border-radius: 20px;
+    background-color: var(--main-form-bg);
 }
 
 iframe {
@@ -2637,5 +2640,67 @@ iframe {
 
     .content__join {
         margin-bottom: 105px;
+    }
+
+    .design__item img {
+        width: 100%;
+        max-width: 348px;
+        background-position: center;
+    }
+
+    .form textarea {
+        max-width: 344px;
+    }
+
+
+    .contact__form {
+        margin-bottom: 0;
+        border: none;
+        padding: 0;
+        max-width: 344px;
+        background-color: transparent;
+    }
+    
+   
+    .form input {
+        max-width: 344px;
+    }
+
+    .site-footer {
+        padding: 0;
+    }
+
+    .form__button {
+        max-width: 145px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .content__buttons-res {
+        max-width: 326px;
+        padding: 12px 5px  12px 19px;
+    }
+
+    .content__btn-res {
+        max-width: 64px;
+        padding: 12px 17px 12px 25=1px;
+    }
+
+    .res__input {
+        max-width: 100px;
+    }
+
+    .form textarea {
+        max-width: 300px;
+    }
+
+
+    .contact__form {
+        max-width: 300px;
+    }
+    
+   
+    .form input {
+        max-width: 300px;
     }
 }

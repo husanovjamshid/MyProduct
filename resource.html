@@ -87,7 +87,7 @@
           
     
 
-        <!-- <section class="design">
+         <section class="design">
             <div class="container">
                 <div class="design__inner">
                     <h3 class="design__title design__title-res">Latest Stories</h3>
@@ -226,9 +226,18 @@
                     </p>
 
                     <div class="contact__icons">
-                        <img src="./images/instagram.svg" width="50" height="50" alt="instagram">
-                        <img src="./images/facebook.svg" width="50" height="50" alt="instagram">
-                        <img src="./images/twitter.svg" width="50" height="50" alt="instagram">
+                       <picture>
+                            <source media="(max-width: 576px)" srcset="./images/twitter-color.svg">
+                            <img src="./images/instagram.svg" width="50" height="50" alt="instagram">
+                       </picture>
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="./images/facebook-color.svg">
+                            <img src="./images/facebook.svg" width="50" height="50" alt="instagram">
+                        </picture>
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="./images/ln-color.svg">
+                            <img src="./images/twitter.svg" width="50" height="50" alt="instagram">
+                        </picture>
                     </div>
 
                     <div class="contact__cart">
@@ -246,7 +255,7 @@
                     </form>
                 </div>
             </div>
-        </section> -->
+        </section>
 
     </main>
     <!-- ********* END MAIN ********** -->
