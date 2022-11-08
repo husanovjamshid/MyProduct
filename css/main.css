@@ -113,7 +113,10 @@ img {
 
 .site-header {
     padding: 19px 0;
-    
+    position: fixed;
+    width: 100%;
+    background-color: var(--main-form-bg);
+    z-index: 999;
 }
 
 .site-header__wrap {
@@ -2045,6 +2048,7 @@ label {
         text-align: center;
         margin: 0;
         padding: 0;
+        margin-top: 50px;
         margin-bottom: 37px;
         list-style-type: none;
     }
@@ -2703,4 +2707,6 @@ iframe {
     .form input {
         max-width: 300px;
     }
+
+    
 }
